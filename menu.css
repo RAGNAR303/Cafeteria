@@ -1,0 +1,77 @@
+:root {
+  font-size: 10px;
+  --main-color: #d3ad7f;
+  --black: #131313;
+  --bg: #010103;
+  --border: 0.1rem solid #ffffff4a;
+  --white: #d8d8d8;
+}
+img{
+    width: 80px;
+}
+
+
+nav.menu-lateral {
+  height: 100%;
+  width: 110px;
+  background-color: var(--black);
+  padding: 40px 0 40px 1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 0 0 var(--main-color);
+  overflow: hidden;
+}
+nav.menu-lateral:hover {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.btn-expandir > i {
+  color: var(--white);
+  font-size: 50px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+ul {
+  list-style-type: none;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background: var(--main-color);
+}
+
+
+ul li.item-menu:hover {
+  background-color: var(--main-color);
+}
+
+ul li.item-menu a {
+  line-height: 40px;
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+  /* padding-left: 25px; */
+  padding: 10px  0  10px 25px ;
+  transition: 0.5s ease-in-out;
+}
+
+
+ul li.item-menu a .txt-link {
+  color: var(--white);
+  margin-left: 40px;
+  
+}
+
+ul li.item-menu a .icon > i {
+  color: var(--white);
+  font-size: 40px;
+}

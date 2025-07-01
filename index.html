@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <title>DevCafé</title>
+    </head>
+    <body>
+        <div class="caixa-video">
+            <video src="./videos/video2.mp4" loop muted autoplay></video>
+            <div class="mascara"></div>
+        </div>
+        <header class="header">
+            <nav class="menu-lateral">
+                <a href="#"> <img src="./img/logo.png" alt="logo-cafeteria"></a>
+                <div class="btn-expandir">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul>
+                    <li class="item-menu">
+                        <a href="#Home">
+                            <span class="icon"><i
+                                    class="bi bi-house-door"></i></span>
+                            <span class="txt-link">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item-menu">
+                        <a href="#caixa-sobre">
+                            <span class="icon"><i
+                                    class="bi bi-info-circle"></i></span>
+                            <span class="txt-link">Sobre</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item-menu">
+                        <a href="#menu-drink">
+                            <span class="icon"><i
+                                    class="bi bi-bag"></i></span>
+                            <span class="txt-link">Menu</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item-menu">
+                        <a href="#Comentários" >
+                            <span class="icon"><i class="bi bi-chat-quote"></i></i></span>
+                            <span class="txt-link">Comentários</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item-menu">
+                        <a onclick="mostrarModal()">
+                            <span class="icon"><i
+                                    class="bi bi-geo-alt"></i></span>
+                            <span class="txt-link">Endereço</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="item-menu">
+                        <a onclick="mostrarContatos()">
+                            <span class="icon"><i class="bi bi-telephone"></i></i></span>
+                            <span class="txt-link">Contatos</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="box-site">
+            <section class="caixa-principal" id="Home">
+                <div>
+                    <h3>Code com i Melhor Café da Região</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ut odio unde ea tenetur alias maxime fugiat in iste
+                        optio ad repellendus corporis porro autem nesciunt
+                        animi, reprehenderit fuga totam consequatur.</p>
+                    <a class="link-botão" href="#">Pegue o seu agora</a>
+                </div>
+            </section>
+            <section class="caixa-sobre" id="caixa-sobre">
+                <h2 class="titulo">
+                    Sobre<span class="span"> Nós</span>
+                </h2>
+                <div class="container-sobre">
+                    <div class="caixa-image">
+                        <img src="./img/about-img.jpg" alt>
+                    </div>
+                    <div class="sobre-container">
+                        <h3>O que faz nosso café especial</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                            Voluptatibus blanditiis voluptatum, ullam at ut
+                            culpa? A
+                            ipsam dicta adipisci eaque nemo, saepe doloribus
+                            recusandae deserunt, quod, corporis suscipit. Nulla,
+                            quam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Voluptatibus libero, vitae totam optio voluptate
+                            fuga,
+                            voluptates quis consequuntur non sunt reprehenderit
+                            velit cum omnis doloremque aliquid, tempore
+                            praesentium
+                            impedit ipsam!</p>
+                        <a class="link-botão" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+            </section>
+            <section class="caixa-menu" id="menu-drink">
+                <h2 class="titulo">
+                    Nosso<span class="span"> Menu</span>
+                </h2>
+                <div class="container-menu">
+                    <div class="image-menu">
+                        <img src="./img/home-img.jpg" alt>
+                    </div>
+
+                    <div class="menu-container">
+                        <h3>Temos a maior varíedade bebidas</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit.
+                            Voluptatibus blanditiis voluptatum, ullam at ut
+                            culpa? A
+                            ipsam dicta adipisci eaque nemo, saepe doloribus
+                            recusandae deserunt, quod, corporis suscipit. Nulla,
+                            quam!</p>
+
+                        <a class="link-botão" href="#">Todo Menu</a>
+                        <section class="menu-drink">
+
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="modal">
+            <h2 class="titulo">Nosso<span class="span"> Endereço</span></h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58570.96775180609!2d-46.86413526535037!3d-23.435725988666732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefdcc4b34f483%3A0x2db5610968d0492f!2scafe%20de%20casa!5e0!3m2!1spt-BR!2sbr!4v1750787796840!5m2!1spt-BR!2sbr"
+                width="500" height="350" style="border:0;" allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="span">Clique fora para fechar</span>
+        </div>
+        <div class="contatos">
+            <section class="formulario">
+                <h2 class="titulo">Entre em <span class="span">Contato</span></h2>
+            <div class="formulario-box">
+                
+                <form class="formulario-contato" onsubmit="enviarMsg(event)" id="formulario-caixa">
+                    <div class="grupo-form">
+                        <input placeholder="Nome" class="text-form" id="name">
+                    </div>
+                    <div class="grupo-form">
+                        <textarea class="text-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar WhatsApp" class="button-enviar">
+                </form>
+            </div>
+        </section>
+        </div>
+        <div onclick="fecharModal()" class="mascara-modal"></div>
+    </body>
+    <script src="scripts.js"></script>
+    <script src="menuDrink.js"></script>
+</html>
